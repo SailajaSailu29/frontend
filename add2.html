@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage example</title>
+</head>
+<body>
+    <h1>local storage example</h1>
+    <input type="text" id+="inputfield" placehocalstolder="enter a value">
+    <button onclick="saveData()">save</button>
+    <button onclick="cleardata()">clear</button>
+    <script>
+        function saveData(){
+            var value=document.getElementById('inputField').value;
+            localstorage.setItem('data',value);
+        }
+    </script>
+
+    
+</body>
+</html>
